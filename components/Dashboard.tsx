@@ -152,12 +152,14 @@ const OurResult = () => {
 // Main Dashboard component
 const Dashboard = () => {
   return (
-    <section className="flex flex-col gap-5 sm:gap-16">
-      <div className="flex flex-col-reverse sm:flex-row justify-between gap-10 sm:gap-24">
-        <Article />
-        <Figure />
+    <section className="bg-[#0E1947]">
+      <div className="m-auto w-[90%] pb-10 flex flex-col gap-5 sm:gap-16">
+        <div className="flex flex-col-reverse sm:flex-row justify-between gap-10 sm:gap-24">
+          <Article />
+          <Figure />
+        </div>
+        <OurResult />
       </div>
-      <OurResult />
     </section>
   );
 };

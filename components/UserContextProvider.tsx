@@ -37,7 +37,7 @@ const UserContextProvider = ({ children }: { children: ReactNode }) => {
   }, []);
   return (
     <UserContext.Provider value={{ matches, toggle, ToggleSidebar }}>
-      <div className="bg-[#0E1947]">{children}</div>
+      <div className="">{children}</div>
     </UserContext.Provider>
   );
 };

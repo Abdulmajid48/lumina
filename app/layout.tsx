@@ -70,10 +70,8 @@ export default function RootLayout({
         className={`${monaSans.className} ${publicSans.variable} ${mulish.variable} ${ubuntu.variable} ${montserrat.variable} ${inter.variable} ${readexPro.variable} ${poppins.variable}`}
       >
         <UserContextProvider>
-          <div className="w-[90%] m-auto">
-            <Navbar />
-            <AnimationWrapper>{children}</AnimationWrapper>
-          </div>
+          <Navbar />
+          <AnimationWrapper>{children}</AnimationWrapper>
         </UserContextProvider>
       </body>
     </html>

@@ -50,12 +50,14 @@ const useUserContext = () => {
 const Navbar = () => {
   const { matches } = useUserContext();
   return (
-    <nav className="flex items-center justify-between h-20 mb-2 font-readex">
-      <div className="flex gap-2 items-center z-20">
-        <Image src="/logo.png" alt="Lumina Logo" width={30} height={30} />
-        <p className="font-bold text-2xl">LUMINA</p>
+    <nav className="bg-[#0E1947] flex items-center h-20 pb-2 font-readex">
+      <div className="m-auto w-[90%] flex items-center justify-between">
+        <div className="flex gap-2 items-center z-20">
+          <Image src="/logo.png" alt="Lumina Logo" width={30} height={30} />
+          <p className="font-bold text-2xl">LUMINA</p>
+        </div>
+        {matches ? <Mobileview /> : <Desktopview />}
       </div>
-      {matches ? <Mobileview /> : <Desktopview />}
     </nav>
   );
 };
