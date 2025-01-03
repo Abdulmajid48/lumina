@@ -61,7 +61,7 @@ const Offers = () => {
   const { matches } = useUserContext();
   return (
     <section className="bg-white h-auto relative font-mulish">
-      <div className="m-auto w-[90%] flex flex-col gap-16 pt-32 pb-32">
+      <div className="m-auto w-[90%] flex flex-col gap-16 pt-32 pb-20">
         <div className="absolute right-2 top-7">
           <Image
             src="\offersdottedline.svg"

@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
@@ -21,7 +20,7 @@ const OurStory = () => {
   const { matches } = useUserContext();
   return (
     <section className="bg-[#0E1947]">
-      <div className="m-auto w-[90%] flex flex-col-reverse sm:flex-row justify-between gap-20 font-publicsans pb-32">
+      <div className="m-auto w-[90%] flex flex-col-reverse sm:flex-row justify-between gap-20 font-publicsans pb-20">
         <div className="flex flex-col gap-5 sm:items-start justify-start sm:w-1/2 sm:mt-[5%]">
           <h2 className="font-bold text-2xl">Know Our Story</h2>
           <p className="text-sm leading-loose">
