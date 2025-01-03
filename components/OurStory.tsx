@@ -51,9 +51,9 @@ const OurStory = () => {
             alt="image design"
             width={40}
             height={40}
-            className="absolute bottom-0 right-7 sm:-right-5"
+            className="absolute -bottom-5 right-0 sm:-right-5"
           />
-          <div className="absolute left-6 top-8 border-2 border-[#EE4312] rounded-xl h-[340px] w-[330px] sm:h-[370px] sm:w-[400px]"></div>
+          <div className="absolute left-4 top-6 border-2 border-[#EE4312] rounded-xl h-[300px] w-[320px] sm:h-[370px] sm:w-[400px]"></div>
           <Image
             src="/ourstory.svg"
             alt="our story"

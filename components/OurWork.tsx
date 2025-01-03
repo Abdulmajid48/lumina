@@ -44,11 +44,11 @@ const Works: WorksListType[] = [
 const OurWork = () => {
   const { matches } = useUserContext();
   return (
-    <section className="bg-white relative">
+    <section className="bg-white relative font-inter">
       <div className="m-auto w-[90%] flex flex-col pb-20">
         <div className="flex pt-7">
           <div className="flex flex-col sm:w-1/2 gap-5 mt-10">
-            <h2 className="text-[#100F1B] text-base sm:text-xl">
+            <h2 className="text-[#100F1B] text-2xl sm:text-3xl font-bold">
               Our Work is For Your Success
             </h2>
             <p className="text-[#373642] text-sm">
@@ -85,8 +85,10 @@ const OurWork = () => {
                   width={80}
                   height={80}
                 />
-                <h1 className="font-bold text-xl text-[#100F1B]">{title}</h1>
-                <p className=" text-sm text-[#373642] leading-relaxed">
+                <h1 className="font-bold text-xl text-[#100F1B] font-montserrat">
+                  {title}
+                </h1>
+                <p className=" text-sm text-[#373642] leading-relaxed font-ubuntu">
                   {description}
                 </p>
               </div>
