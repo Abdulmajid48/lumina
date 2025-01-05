@@ -1,3 +1,4 @@
+import BenefitOfTeam from "@/components/BenefitOfTeam";
 import Dashboard from "@/components/Dashboard";
 import Offers from "@/components/Offers";
 import OurStory from "@/components/OurStory";
@@ -9,6 +10,7 @@ const Main = () => {
     <Offers/>
     <OurStory/>
     <OurWork/>
+    <BenefitOfTeam/>
   </main>;
 };
 export default Main;

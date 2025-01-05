@@ -44,8 +44,8 @@ const Works: WorksListType[] = [
 const OurWork = () => {
   const { matches } = useUserContext();
   return (
-    <section className="bg-white relative font-inter">
-      <div className="m-auto w-[90%] flex flex-col pb-20">
+    <section className="bg-white font-inter">
+      <div className="m-auto w-[90%] flex flex-col pb-20 relative">
         <div className="flex pt-7">
           <div className="flex flex-col sm:w-1/2 gap-5 mt-10">
             <h2 className="text-[#100F1B] text-2xl sm:text-3xl font-bold">
@@ -66,7 +66,7 @@ const OurWork = () => {
               height={50}
               className="absolute right-3 sm:right-5"
             />
-            <button className="absolute max-sm:bottom-0 max-sm:left-0 max-sm:right-0 max-sm:w-[90%] sm:top-24 sm:right-20 max-sm:text-xs sm:text-sm flex items-center justify-center bg-[#EE4312] h-10 p-3 m-auto rounded-md gap-5">
+            <button className="absolute max-sm:bottom-0 max-sm:left-0 max-sm:right-0 max-sm:w-[90%] sm:top-24 sm:right-20 max-sm:text-xs sm:text-sm flex items-center justify-center bg-[#EE4312] h-10 p-3 mb-5 sm:mb-0 m-auto rounded-md gap-5">
               <Link href=""> Book an Appointment</Link>
             </button>
           </div>
