@@ -67,7 +67,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${monaSans.className} ${publicSans.variable} ${mulish.variable} ${ubuntu.variable} ${montserrat.variable} ${inter.variable} ${readexPro.variable} ${poppins.variable}`}
+        className={`text-white ${monaSans.className} ${publicSans.variable} ${mulish.variable} ${ubuntu.variable} ${montserrat.variable} ${inter.variable} ${readexPro.variable} ${poppins.variable}`}
       >
         <UserContextProvider>
           <Navbar />

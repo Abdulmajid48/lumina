@@ -24,10 +24,12 @@ const BenefitOfTeam = () => {
   return (
     <section className="bg-[#0E1947]">
       {/* Top section */}
-      <div className="m-auto w-[90%] flex flex-col-reverse sm:flex-row justify-between items-center font-ubuntu">
+      <div className="m-auto w-[90%] flex flex-col-reverse sm:flex-row justify-between items-center font-ubuntu pb-12">
         <div className="flex flex-col gap-5">
-          <div className="flex flex-col gap-4">
-            <h2 className="font-bold text-3xl">Benefits of Teaming Up with Us</h2>
+          <div className="flex flex-col gap-4 mt-5">
+            <h2 className="font-bold text-3xl">
+              Benefits of Teaming Up with Us
+            </h2>
             <p className="sm:text-xs text-sm text-[#E2DEDC] leading-relaxed">
               Embark on a transformative journey with us, where tailored
               solutions and dedicated support redefine collaborative success.
@@ -43,11 +45,13 @@ const BenefitOfTeam = () => {
                   className="flex items-center gap-5 bg-white rounded-r-xl px-5 py-2"
                 >
                   <div>
-                    <Image src={image} alt={title} width={80} height={80} />
+                    <Image src={image} alt={title} width={70} height={70} />
                   </div>
                   <div className="flex flex-col gap-3">
                     <h3 className="text-[#100F1B] font-bold">{title}</h3>
-                    <p className="text-[#373642] text-xs leading-normal">{description}</p>
+                    <p className="text-[#373642] text-xs leading-normal">
+                      {description}
+                    </p>
                   </div>
                 </div>
               );

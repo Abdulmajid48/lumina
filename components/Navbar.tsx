@@ -116,17 +116,20 @@ const Mobileview = () => {
 // DesktopView Component
 const Desktopview = () => {
   return (
-    <div className="flex items-center sm:gap-16 md:gap-20 text-sm ">
+    <div className="flex items-center sm:gap-16 md:gap-20 text-sm">
       <div className="flex gap-10">
         {List.map((item, index) => {
           return (
-            <li key={index} className="list-none hover:text-[#EE4312]">
+            <li
+              key={index}
+              className="list-none hover:text-[#EE4312]"
+            >
               <Link href={item.link}>{item.name}</Link>
             </li>
           );
         })}
       </div>
-      <button className="bg-[#EE4312] rounded-lg p-2 text-xs">
+      <button className="bg-[#EE4312] rounded-lg p-2 text-xs ">
         Book an Appointment
       </button>
     </div>
