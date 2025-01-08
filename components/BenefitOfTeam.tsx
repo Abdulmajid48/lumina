@@ -61,7 +61,7 @@ const BenefitOfTeam = () => {
         {/* Right Container */}
         <div className="mb-10 sm:mb-0">
           <Image
-            src={"/benefit3.svg"}
+            src={"/benefitimage.png"}
             alt="benefit3"
             width={400}
             height={400}
