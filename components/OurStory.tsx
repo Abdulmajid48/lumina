@@ -53,7 +53,7 @@ const OurStory = () => {
             height={40}
             className="absolute -bottom-5 right-0 sm:-right-5"
           />
-          <div className="absolute left-4 top-6 border-2 border-[#EE4312] rounded-xl h-[300px] w-[320px] sm:h-[370px] sm:w-[400px]"></div>
+          <div className="absolute left-4 top-6 border-2 border-[#EE4312] rounded-xl h-[300px] w-[320px] sm:h-[300px] sm:w-[300px] md:h-[370px] md:w-[350px] lg:h-[370px] lg:w-[400px]"></div>
           <Image
             src="/ourstory.svg"
             alt="our story"
