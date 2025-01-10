@@ -11,6 +11,7 @@ import { Readex_Pro } from "next/font/google";
 import { Poppins } from "next/font/google";
 import { Mulish } from "next/font/google";
 import { Public_Sans } from "next/font/google";
+import Footer from "@/components/Footer";
 
 const publicSans = Public_Sans({
   subsets: ["latin"],
@@ -71,7 +72,10 @@ export default function RootLayout({
       >
         <UserContextProvider>
           <Navbar />
-          <AnimationWrapper>{children}</AnimationWrapper>
+          <AnimationWrapper>
+            {children}
+            <Footer />
+          </AnimationWrapper>
         </UserContextProvider>
       </body>
     </html>

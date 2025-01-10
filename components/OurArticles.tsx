@@ -3,6 +3,14 @@ import Image from "next/image";
 import { useContext } from "react";
 import { UserContext } from "./UserContextProvider";
 
+interface OurArticlesType {
+  image: string;
+  imagebg: string;
+  name: string;
+  title: string;
+  description: string;
+  date: string;
+}
 // Custom Hook for Usercontext
 const useUserContext = () => {
   const context = useContext(UserContext);
@@ -14,14 +22,6 @@ const useUserContext = () => {
   return context;
 };
 
-interface OurArticlesType {
-  image: string;
-  imagebg: string;
-  name: string;
-  title: string;
-  description: string;
-  date: string;
-}
 const OurArticlesContent: OurArticlesType[] = [
   {
     image: "/marketing.png",
@@ -45,7 +45,7 @@ const OurArticlesContent: OurArticlesType[] = [
 const OurArticles = () => {
   const { matches } = useUserContext();
   return (
-    <section className="bg-white relative h-auto text-black pb-20">
+    <section className="bg-white relative h-auto text-black sm:pb-5 pb-20">
       <div className="font-mulish m-auto w-[90%] flex flex-col gap-8">
         <div className="flex gap-4 absolute right-4 top-3">
           <Image
@@ -74,7 +74,7 @@ const OurArticles = () => {
             Search Other Articles
           </button>
         </div>
-        <div className="flex flex-col items-center sm:justify-start justify-between sm:flex-row gap-5 pb-10 mb-4">
+        <div className="flex flex-col lg:flex-row  items-center sm:justify-start justify-between gap-5 pb-10 mb-4">
           {OurArticlesContent.map((item, index) => {
             const { image, title, description, date } = item;
             return (
