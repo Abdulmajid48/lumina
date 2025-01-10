@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useContext } from "react";
 import { UserContext } from "./UserContextProvider";
+import { motion } from "motion/react";
 
 interface OffersListType {
   image: string;
@@ -83,8 +84,12 @@ const Offers = () => {
           {OffersList.map((item, index) => {
             const { image, title, description } = item;
             return (
-              <div
+              <motion.div
                 key={index}
+                layout
+                initial={{ opacity: 0.2, y: "100px" }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
                 className="flex flex-col items-center justify-start gap-2 sm:w-1/3"
               >
                 <Image src={image} alt={title} width={70} height={70} />
@@ -94,7 +99,7 @@ const Offers = () => {
                 <p className="text-[#373642] sm:text-sm text-center w-3/4">
                   {description}
                 </p>
-              </div>
+              </motion.div>
             );
           })}
         </div>

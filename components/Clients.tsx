@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from "motion/react";
 
 interface CarouselType {
   description: string;
@@ -55,10 +56,18 @@ const Carousel = ({ currentIndex, setCurrentIndex }: CarouselProps) => {
             {carouselContent.map((item, index) => {
               const { description, name, title, image, star } = item;
               return (
-                <div key={index} className="w-full flex-shrink-0">
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 200 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
+                  className="w-full flex-shrink-0"
+                >
                   <div className="mx-4 flex flex-col">
                     <div className="bg-[#E2DEDC] p-9 rounded-t-lg">
-                      <p className="text-[#373642] sm:text-lg font-readex">{description}</p>
+                      <p className="text-[#373642] sm:text-lg font-readex">
+                        {description}
+                      </p>
                     </div>
                     <div className="bg-[#EE4312] flex items-center gap-5 relative p-4 rounded-b-lg">
                       <div className="relative w-20 h-20">
@@ -85,7 +94,7 @@ const Carousel = ({ currentIndex, setCurrentIndex }: CarouselProps) => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>

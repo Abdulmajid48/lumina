@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import Image from "next/image";
 
 interface BenefitType {
@@ -25,7 +27,12 @@ const BenefitOfTeam = () => {
     <section className="bg-[#0E1947]">
       {/* Top section */}
       <div className="m-auto w-[90%] flex flex-col-reverse sm:flex-row justify-between items-center font-ubuntu pb-12">
-        <div className="flex flex-col gap-5">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="flex flex-col gap-5"
+        >
           <div className="flex flex-col gap-4 mt-5">
             <h2 className="font-bold text-3xl">
               Benefits of Teaming Up with Us
@@ -57,9 +64,14 @@ const BenefitOfTeam = () => {
               );
             })}
           </div>
-        </div>
+        </motion.div>
         {/* Right Container */}
-        <div className="mb-10 sm:mb-0">
+        <motion.figure
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="mb-10 sm:mb-0"
+        >
           <Image
             src={"/benefitimage.png"}
             alt="benefit3"
@@ -67,7 +79,7 @@ const BenefitOfTeam = () => {
             height={400}
             className="col-span-3"
           />
-        </div>
+        </motion.figure>
       </div>
     </section>
   );

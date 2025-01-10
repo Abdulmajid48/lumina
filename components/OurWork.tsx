@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
 import { UserContext } from "./UserContextProvider";
+import { motion } from "motion/react";
 
 
 // Custom Hook for Usercontext
@@ -75,8 +76,11 @@ const OurWork = () => {
           {Works.map((item, index) => {
             const { image, title, description } = item;
             return (
-              <div
+              <motion.div
                 key={index}
+                initial={{ scale: 1.5 }}
+                whileInView={{ scale: 1 }}
+                transition={{ duration: 0.8, ease: "easeInOut" }}
                 className="flex flex-col justify-center items-center gap-3"
               >
                 <Image
@@ -91,7 +95,7 @@ const OurWork = () => {
                 <p className=" text-sm text-[#373642] leading-relaxed font-ubuntu">
                   {description}
                 </p>
-              </div>
+              </motion.div>
             );
           })}
         </div>

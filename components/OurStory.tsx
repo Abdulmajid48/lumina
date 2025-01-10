@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
 import { UserContext } from "./UserContextProvider";
+import { motion } from "motion/react";
 
 // Custom Hook for Usercontext
 const useUserContext = () => {
@@ -21,7 +22,12 @@ const OurStory = () => {
   return (
     <section className="bg-[#0E1947]">
       <div className="m-auto w-[90%] flex flex-col-reverse sm:flex-row justify-between gap-20 font-publicsans pb-20">
-        <div className="flex flex-col gap-5 sm:items-start justify-start sm:w-1/2 sm:mt-[5%]">
+        <motion.div
+          initial={{ opacity: 0, y: 200 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="flex flex-col gap-5 sm:items-start justify-start sm:w-1/2 sm:mt-[5%]"
+        >
           <h2 className="font-bold text-2xl">Know Our Story</h2>
           <p className="text-sm leading-loose">
             Founded in 2019, Lumina is a leading web consulting firm based in
@@ -37,8 +43,13 @@ const OurStory = () => {
           <button className="text-sm p-2 text-center bg-[#EE4312] rounded-md">
             <Link href="">Learn More</Link>
           </button>
-        </div>
-        <div className="relative">
+        </motion.div>
+        <motion.figure
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          className="relative"
+        >
           <Image
             src="ourstorydesign2.svg"
             alt="image design"
@@ -60,7 +71,7 @@ const OurStory = () => {
             width={matches ? 380 : 400}
             height={matches ? 380 : 400}
           />
-        </div>
+        </motion.figure>
       </div>
     </section>
   );

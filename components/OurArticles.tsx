@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useContext } from "react";
 import { UserContext } from "./UserContextProvider";
+import { motion } from "motion/react";
 
 interface OurArticlesType {
   image: string;
@@ -78,7 +79,12 @@ const OurArticles = () => {
           {OurArticlesContent.map((item, index) => {
             const { image, title, description, date } = item;
             return (
-              <div key={index}>
+              <motion.div
+                key={index}
+                initial={{ opacity: 0.2, y: "100px" }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+              >
                 <div
                   className={`${matches ? "w-[300px] h-auto" : "w-[520px]"}`}
                 >
@@ -102,7 +108,7 @@ const OurArticles = () => {
                     <p className="text-[#EE4312]">Read More</p>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
