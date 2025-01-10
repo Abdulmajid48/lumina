@@ -5,7 +5,6 @@ import { useContext } from "react";
 import { UserContext } from "./UserContextProvider";
 import { motion } from "motion/react";
 
-
 // Custom Hook for Usercontext
 const useUserContext = () => {
   const context = useContext(UserContext);
@@ -78,8 +77,8 @@ const OurWork = () => {
             return (
               <motion.div
                 key={index}
-                initial={{ scale: 1.5 }}
-                whileInView={{ scale: 1 }}
+                initial={matches ? { y: "100px" } : { scale: 1.5 }}
+                whileInView={matches ? { y: 0 } : { scale: 1 }}
                 transition={{ duration: 0.8, ease: "easeInOut" }}
                 className="flex flex-col justify-center items-center gap-3"
               >
