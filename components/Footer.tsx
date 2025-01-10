@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="sm:mt-10 max-sm:absolute bottom-3 left-0 right-0 w-full flex flex-col items-center text-sm">
           <div className="max-sm:w-[90%] w-full mx-auto">
             <div className="border-t border-[#EE4312] w-full mb-3"></div>
-            <div className="flex justify-between">
+            <div className="flex justify-center sm:justify-between">
               <div className="hidden sm:flex gap-2">
                 <Image
                   src="/logo.png"
