@@ -24,7 +24,7 @@ const Collaborate = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           className="flex flex-col gap-5 mt-60 sm:mt-20 mb-10 sm:mb-0"
         >
           <h1 className="text-3xl font-bold">
@@ -41,7 +41,7 @@ const Collaborate = () => {
         <motion.figure
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           className="absolute right-0"
         >
           <Image

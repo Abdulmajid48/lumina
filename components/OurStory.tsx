@@ -25,7 +25,7 @@ const OurStory = () => {
         <motion.div
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           className="flex flex-col gap-5 sm:items-start justify-start sm:w-1/2 sm:mt-[5%]"
         >
           <h2 className="font-bold text-2xl">Know Our Story</h2>
@@ -47,7 +47,7 @@ const OurStory = () => {
         <motion.figure
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           className="relative"
         >
           <Image

@@ -30,7 +30,7 @@ const BenefitOfTeam = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           className="flex flex-col gap-5"
         >
           <div className="flex flex-col gap-4 mt-5">
@@ -69,7 +69,7 @@ const BenefitOfTeam = () => {
         <motion.figure
           initial={{ opacity: 0, y: 200 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
           className="mb-10 sm:mb-0"
         >
           <Image

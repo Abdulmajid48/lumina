@@ -89,7 +89,7 @@ const Offers = () => {
                 layout
                 initial={{ opacity: 0.2, y: "100px" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
+                transition={{ duration: 0.8, ease: "easeInOut" }}
                 className="flex flex-col items-center justify-start gap-2 sm:w-1/3"
               >
                 <Image src={image} alt={title} width={70} height={70} />

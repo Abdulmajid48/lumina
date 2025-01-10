@@ -83,7 +83,7 @@ const OurArticles = () => {
                 key={index}
                 initial={{ opacity: 0.2, y: "100px" }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, ease: "easeInOut" }}
+                transition={{ duration: 0.8, ease: "easeInOut" }}
               >
                 <div
                   className={`${matches ? "w-[300px] h-auto" : "w-[520px]"}`}
