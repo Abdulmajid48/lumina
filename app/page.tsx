@@ -8,7 +8,7 @@ import OurStory from "@/components/OurStory";
 import OurWork from "@/components/OurWork";
 
 const Main = () => {
-  return <main>
+  return <main className="overflow-hidden">
     <Dashboard/>
     <Offers/>
     <OurStory/>
