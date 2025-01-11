@@ -87,7 +87,7 @@ const Offers = () => {
               <motion.div
                 key={index}
                 layout
-                initial={{ opacity: 0.2, y: "100px" }}
+                initial={{ opacity: 0.2, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeInOut" }}
                 className="flex flex-col items-center justify-start gap-2 sm:w-1/3"

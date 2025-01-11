@@ -77,8 +77,12 @@ const OurWork = () => {
             return (
               <motion.div
                 key={index}
-                initial={matches ? { y: "100px" } : { scale: 1.5 }}
-                whileInView={matches ? { y: 0 } : { scale: 1 }}
+                initial={{
+                  opacity: 0.2,
+                  scale: matches ? 1 : 1.5,
+                  y: matches ? 100 : 0,
+                }}
+                whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeInOut" }}
                 className="flex flex-col justify-center items-center gap-3"
               >
